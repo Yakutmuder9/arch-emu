@@ -1,15 +1,70 @@
+@import url("https://fonts.googleapis.com.css?family=M+PLUS+1:400,700,500,600,100|Montserrat+Subrayada:700|Montserrat:800|Poppins:400,600");
+
 *,
 ::after,
 ::before{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
 }
 
 
 :root{
   /* ---root colors------- */
-  --black: rgba(0, 0, 0, 0.1);
-  --diesel: rgba(13, 0, 0, 1);
+  --black: #0000001a;
+  --black-overlay: #0000004b;
+  --diesel: #0d0000;
+  --nile-blue: #1e354f;
+  --shark: #21232b;
+  --thunder: #342e2e;
+  --bracken: #4c2904;
+  --blueberry: #5555ff;
+  --shady-lady: #aaaaaa;
+  
+  --alto: #d9d9d9;
+  --outrageous-orange: #ff7050;
+  --white-2: #ffffffcc;
+  --white: #ffffff;
+  --light-golden: #F1DBC3;
 
+  --font-size-xxs: 14px;
+  --font-size-xs: 15px;
+  --font-size-s: 16px;
+  --font-size-xxs: 18px;
+  --font-size-l: 20px;
+  --font-size-xl: 23px;
+  --font-size-xxl: 24px;
+
+  --font-family-m_plus_1: "M PLUS";
+  --font-family-montserrat: "Montserrat";
+  --font-family-montserrat-subrayada: "Montserrat Subrayada";
+  --font-family-poppins: "Poppins";
+}
+
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-track {
+  background: var(--shark);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--alto);
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(7, 17, 78);
+}
+
+
+body{
+  width: 100vw;
+  height: auto;
+  overflow-x: hidden;
+}
+.App{
+  width: 100vw;
+  height: auto;
 }

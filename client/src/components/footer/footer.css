@@ -1,0 +1,85 @@
+.footer{
+    width: 100vw;
+    height: 320px;
+    background: var(--shark);
+    color: var(--white);
+    overflow-x: hidden;
+    
+}
+.footer-container{
+    margin-top: 5vmin;
+    width: 100%;
+    padding: 2vmin 5vmin;
+    max-width: 1400px;
+}
+.footer-border{
+    width: 100%;
+    height: 8px;
+    background: var(--light-golden);
+}
+.footer-disc-cont h3{
+    font-size: 36px;
+}
+.footer-disc-cont button{
+    height: 60px;
+    width: 220px;
+    border-radius: 5px;
+    font-size: var(--font-size-xxl);
+    z-index: 2!important;
+}
+
+.footer-disc-cont button:hover{
+    box-shadow: 0 8px 16px 0 rgba(222, 222, 222, 0.2);
+}
+.footer-disc-cont a span svg{
+ font-weight: 900;
+ color: var(--shark);
+}
+.foot-copywrite p, .foot-about-list ul li, .foot-info-list ul li, .foot-share-lis ul li{
+  color: var(--white-2);
+}
+.foot-list-items ul{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: left;
+}
+.foot-share-list button{
+    text-align: center;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: var(--white);
+    font-size: 20px;
+}
+
+@media(max-width: 992px){
+    .footer{
+        height: auto;
+    }
+    .foot-copywrite, .foot-share-list{
+        width: 100%!important;
+        display: flex;
+        margin-top: 3vmin;
+        justify-content: space-between;
+        font-size: 2.5vmin;
+    }
+    .footer-disc-cont h3{
+        font-size: 4vmin;
+    }
+    .foot-list-items{
+        flex-wrap: wrap;
+        gap: 30px;
+        flex-direction: column-reverse;
+    }
+    .foot-share-list button{
+        width: 35px;
+        height: 35px;
+    }
+    
+.footer-disc-cont button{
+    height: 45px;
+    width: 150px;
+    font-size: var(--font-size-l);
+}
+}

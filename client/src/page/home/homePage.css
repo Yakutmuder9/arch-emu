@@ -1,0 +1,106 @@
+.home-page {
+    width: 100vw;
+    height: auto;
+    background: linear-gradient(180deg, #EBF4FD 0%, #F7E6D5 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 62px;
+}
+
+.home-page-container {
+    width: 100%;
+    max-width: 1400px;
+    height: calc(100vh - 62px);
+    padding: 3vmin 5vmin;
+    display: flex;
+}
+.home-side-img{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    
+}
+.home-side-img img{
+    height: 100vmin;
+}
+.deco-ellipse {
+    position: absolute;
+    width: 40vmin;
+    height: 40vmin;
+    left: 20vmin;
+    top: -5vmin;
+    z-index: 1 !important;
+    border-radius: 50%;
+    background: linear-gradient(180deg, #a29d9774 -38.38%, rgba(193, 191, 216, 0) 122.34%);
+}
+
+.home-intro-txt {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    padding-top: 5vmin;
+    flex-direction: column;
+    align-items: center;
+    z-index: 4;
+    
+}
+
+.home-intro-txt h3 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    display: flex;
+    align-items: center;
+
+    background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0.67) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.home-intro-txt p {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 127%;
+    margin-top: 5vmin;
+    margin-bottom: 10vmin;
+    align-items: center;
+    color: #4D2A04;
+}
+.home-intro-txt button{
+    width: 222px;
+    height: 62px;
+    border: none;
+    color: var(--white);
+    font-weight: bolder;
+    background: linear-gradient(144.94deg, #F7E6D5 -16.22%, #21232B 42.45%);
+    border-radius: 8px;
+}
+
+.home-intro-txt button:hover{
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.349);
+}
+@media(max-width: 992px) {
+    .home-intro-txt {
+        width: 65%;
+    }
+
+    .home-intro-txt h3 {
+        font-weight: 500;
+        font-size: 44px;
+    }
+    .home-side-img img{
+        height: 70vmin;
+    }
+}
+@media(max-width: 720px) {
+    .home-intro-txt {
+        width: 100%;
+    }
+    .home-intro-txt button{
+        width: 180px;
+        height: 50px;
+    }
+
+}
