@@ -20,7 +20,7 @@ const ProjectPage = () => {
                 </div>
 
                 <div className="content">
-                        <Tabs />
+                    <Tabs />
                 </div>
 
             </div>
@@ -34,7 +34,10 @@ export default ProjectPage
 let data = [
     {
         name: '2019',
-        text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores nihil, nisi, voluptate ad quis ea omnis quidem minima fugit adipisci, porro ut velit officiis natus eligendi autem inventore dolor fuga unde nesciunt expedita, beatae officia nostrum labore. Reiciendis, commodi adipisci eius est recusandae ipsa incidunt repellat explicabo nobis corporis debitis non ullam, eos itaque, quia, iste repudiandae. Iusto numquam consectetur quo, et, quis deleniti ipsam eaque perferendis. Repellat ad, molestiae id deserunt praesentium distinctio similique nesciunt itaque. Repellat error enim blanditiis esse, odio commodi exercitationem nostrum perferendis veniam quod, recusandae provident aspernatur aliquam placeat odit cumque fugit ducimus, voluptatibus ad?'
+        text: <><img src='https://thumbs.dreamstime.com/b/abstract-tunnel-d-background-white-blue-rectangle-windows-render-illustration-95111489.jpg'/>
+        <img src='https://thumbs.dreamstime.com/b/abstract-tunnel-d-background-white-blue-rectangle-windows-render-illustration-95111489.jpg'/>
+        <img src='https://thumbs.dreamstime.com/b/abstract-tunnel-d-background-white-blue-rectangle-windows-render-illustration-95111489.jpg'/>
+        </>
     },
     {
         name: '2020',
@@ -73,50 +76,52 @@ class Tabs extends React.Component {
         return (
             <div className="tabs-body">
                 <TabHeader data={this.state.data}
-                              click={this.changeTabOnClick}
-                              activeId={this.state.activeTab} />
+                    click={this.changeTabOnClick}
+                    activeId={this.state.activeTab} />
                 <TabContent data={this.state.data}
-                               activeId={this.state.activeTab} />
+                    activeId={this.state.activeTab} />
             </div>
         )
     }
 }
 
-class TabHeader extends React.Component {
-    doClick(index) {
-        this.props.click(index);
+const TabHeader = (props) => {
+    const doClick = (index) => {
+        props.click(index);
     }
 
-    render() {
-        let activeClass = this.props.activeId;
+    let activeClass = props.activeId;
 
-        let tabs = this.props.data.map((item, index) => {
-            return <li className={(activeClass === index ? 'active' : '')} key={index}>
-                        <a onClick={this.doClick.bind(this, index)} ><span>{item.name}</span></a>
-                    </li>
-        });
+    let tabs = props.data.map((item, index) => {
+        return <li className={(activeClass === index ? 'active' : '')} key={index}>
+            <a onClick={doClick.bind(this, index)} ><span>{item.name}</span></a>
+        </li>
+    });
 
-        return (
-            <ul className="tabs-header">{tabs}</ul>
-        )
-    }
+    return (
+        <ul className="tabs-header">{tabs}</ul>
+    )
+
 
 }
 
-class TabContent extends React.Component {
-    render() {
-        let activeClass = this.props.activeId;
+const TabContent = (props) => {
+    let activeClass = props.activeId;
 
-        let content = this.props.data.map((item, index) => {
-            return <div  className={'tabs-textItem ' + (activeClass === index ? 'show' : '')} key={index}><p>{item.text}</p></div>
-        });
-        console.log(content);
-        return (
-            <div className="tabs-content">
-                <img src={content}/>
-            </div>
+    let content = props.data.map((item, index) => {
+        return <div className={'tabs-textItem ' + (activeClass === index ? 'show' : '')} key={index}>
+            <p>{item.text}</p>
+        </div>
+    });
+    console.log(content);
 
-        );
-    }
+    return (
+        <div className="tabs-content">
+            {content}
+        </div>
+
+    );
+
 }
+
 

@@ -17,7 +17,6 @@ const App = () => {
       <QualityPage />
       <ProjectPage />
       <StoriesPage />
-      <StoriesPage />
       <Footer />
     </div>
   )
