@@ -1,4 +1,6 @@
 import './about.css'
+import { useState } from 'react'
+
 const AboutPage = () => {
     return (
         <div className='about-page pt-4'>
