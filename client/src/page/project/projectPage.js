@@ -1,5 +1,5 @@
 import './project.css'
-import React from 'react'
+import { useState } from 'react'
 import { AiOutlineArrowDown } from 'react-icons/ai'
 
 const ProjectPage = () => {
