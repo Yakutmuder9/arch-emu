@@ -1,4 +1,5 @@
 import './service.css'
+import { useState } from 'react'
 
 const ServicesPage = () => {
     return (
