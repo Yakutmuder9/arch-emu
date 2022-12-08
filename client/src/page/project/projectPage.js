@@ -3,6 +3,7 @@ import { useState } from 'react'
 import { AiOutlineArrowDown } from 'react-icons/ai'
 
 const ProjectPage = () => {
+    // 
     return (
         <div className='project-page'>
             <div className='project-page-container'>
