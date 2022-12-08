@@ -2,6 +2,7 @@ import './stories.css'
 import { useState } from 'react'
 
 const StoriesPage = () => {
+  
   return (
     <div className='stories-page'>
       <div className='stories-page-container'>
