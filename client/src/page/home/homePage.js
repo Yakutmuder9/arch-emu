@@ -2,8 +2,9 @@ import './homePage.css'
 import { useState } from 'react'
 
 const HomePage = () => {
-    // 
     
+    
+
     return (
         <div className='home-page'>
             <div className='home-page-container '>
