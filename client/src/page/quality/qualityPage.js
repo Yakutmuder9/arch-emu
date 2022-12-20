@@ -28,11 +28,11 @@ const QualityPage = () => {
             </div>
           </div>
 
-          <div className='col-12 col-md-6 qty-img '>
-            <img src='../img/apt2.png' style={{scale:"1.2", marginLeft:"-10%", zIndex: 1, marginTop:"8%"}}/>
+          <div className='col-12 col-md-6 qty-img position-relative'>
+            <img src='../img/apt2.png' style={{scale:"1.2", marginLeft:"-10%", zIndex: 2, marginTop:"8%"}}/>
           </div>
 
-          <div className='qty-ellipse position-absloute'>
+          <div className='qty-ellipse position-absloute' style={{ zIndex: 1}}>
             <div>
               <div id='last-ellipse'></div> <div></div> <div></div> <div></div> <div></div> <div></div>
               <div></div> <div></div> <div></div> <div></div> <div></div> <div></div>

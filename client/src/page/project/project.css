@@ -51,7 +51,6 @@
     margin: 45px auto;
 }
 
-.tabs-body {}
 
 .tabs-header {
     display: table;
@@ -69,7 +68,9 @@
 .tabs-header li>a {
     display: block;
     padding: 15px;
-    background: #212F3D;
+    color: var(--white);
+    font-weight: bolder;
+    background: linear-gradient(144.94deg, #515151 -16.22%, #21232B 42.45%);
     transition: all .2s ease-in;
     transform: skew(-40deg);
 }
@@ -85,7 +86,10 @@
 }
 
 .tabs-header li.active>a {
-    background: #2471A3;
+    color: var(--white);
+    font-weight: bolder;
+    background: linear-gradient(144.94deg, #415c79 -16.22%, #033a5a 42.45%);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 .tabs-content {

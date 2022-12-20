@@ -7,6 +7,7 @@ import HomePage from './page/home/homePage';
 import ProjectPage from './page/project/projectPage';
 import QualityPage from './page/quality/qualityPage';
 import StoriesPage from './page/stories/storiesPage';
+import Testimonial from './page/testimoni/testimonial';
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
       <AboutPage />
       <QualityPage />
       <ProjectPage />
+      <Testimonial />
       <StoriesPage />
       <Footer />
     </div>

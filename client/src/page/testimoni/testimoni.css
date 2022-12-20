@@ -1,0 +1,23 @@
+.testimonial{
+    width: 100vw;
+    height: auto;
+    background: #F1EFF1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    background:#f1f1f1;
+}
+.testimonial-card-1{
+    width: 320px;
+    height: 295px;
+    background: linear-gradient(144.39deg, #FFFFFF -278.56%, #6D6D6D -78.47%, #11101D 91.61%);
+    backdrop-filter: blur(5px);
+    border-radius: 20px;
+}
+
+@media(min-width: 768px){
+   .testimonial-card {
+        
+    }
+}

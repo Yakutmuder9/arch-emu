@@ -40,7 +40,7 @@
     padding: 15px;
     width: 100%;
     background-size: cover;
-    color: #fff;
+    color: black;
   }
   
   .card-header--title {
@@ -50,7 +50,7 @@
   
   .card-body {
     padding: 15px;
-    background-color: #fff;
+    background-color: black;
     width: 100%;
   }
   
@@ -80,17 +80,11 @@
   }
   
   .designer-link {
-    color: #fff;
+    color: black;
     text-align: center;
-    fon-size: 12px;
+    font-size: 12px;
     text-decoration: none;
     display: block;
-  }
-  
-  /* Designer credit: https://dribbble.com/shots/1978243-Latest-News */
-  body,
-  html {
-    overflow-x: hidden;
   }
   
   .app-header {
@@ -102,9 +96,8 @@
     display: inline-block;
     width: 100%;
     margin: 80px 0 0 0;
-    float: left;
     position: relative;
-    color: #fff;
+    color: black;
   }
   @media (min-width: 768px) {
     .app-title {
@@ -140,7 +133,6 @@
   .app-card-list {
     display: inline-block;
     width: 100%;
-    float: right;
     margin: 0;
     min-height: 75vh;
     white-space: normal;
