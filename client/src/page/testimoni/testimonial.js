@@ -13,14 +13,14 @@ const Testimonial = () => {
             <div className='testimonial-card-1'>
                 <div>What people are saying about us</div>
             </div>
-            <div className='testimonial-card-1 mx-4'>
+            <div className='testimonial-card-1 m-4'>
                 <div>What people are saying about us</div>
             </div>
             <div className='testimonial-card-1'>
                 <div>What people are saying about us</div>
             </div>
         </div>
-        
+
         <div className='testimonial-r/n d-flex align-items-center justify-content-between'>
                 <span>What people </span>
                 <span>What people </span>
