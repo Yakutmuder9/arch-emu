@@ -61,9 +61,9 @@ const PostsData = [
 const Main = () => { 
   const [state, setState] = useState({posts: {}})
 
-  const componentWillMount=() =>{
-    setState({posts: PostsData });
-  }
+  // const componentWillMount=() =>{
+  //   setState({posts: PostsData });
+  // }
 
 
     return <div>
