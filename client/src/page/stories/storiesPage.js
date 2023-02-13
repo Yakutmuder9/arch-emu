@@ -1,8 +1,9 @@
 import './stories.css'
 import { useState } from 'react'
+import { response } from 'express'
 
 const StoriesPage = () => {
-  
+
   return (
     <div className='stories-page'>
       <div className='stories-page-container'>
@@ -58,25 +59,25 @@ const PostsData = [
 
 // Start App
 
-const Main = () => { 
-  const [state, setState] = useState({posts: {}})
+const Main = () => {
+  const [state, setState] = useState({ posts: {} })
 
   // const componentWillMount=() =>{
   //   setState({posts: PostsData });
   // }
 
 
-    return <div>
-      <header className="app-header"></header>
-      <Title />
-      <div className="app-card-list" id="app-card-list">
-        {
-          Object
+  return <div>
+    <header className="app-header"></header>
+    <Title />
+    <div className="app-card-list" id="app-card-list">
+      {
+        Object
           .keys(state.posts)
-          .map(key => <Card key={key} index={key} details={state.posts[key]}/>)
-        }
+          .map(key => <Card key={key} index={key} details={state.posts[key]} />)
+      }
     </div>
-    </div>
+  </div>
 }
 
 
